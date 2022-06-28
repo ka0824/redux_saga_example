@@ -1,6 +1,7 @@
 import "./App.css";
 import { pushButton } from "./store/slice/buttonSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Loading from "./components/Loading";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ function App() {
         <button onClick={handleC}>버튼 C</button>
       </section>
       {isLoading ? (
-        <div>로딩중 입니다.</div>
+        <Loading type="dotted"></Loading>
       ) : (
         <section className="two">
           <div>버튼 A를 누른 결과: {aText}</div>
