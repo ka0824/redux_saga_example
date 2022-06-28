@@ -26,8 +26,12 @@ npm run server
 
 > ### 코드 살펴보기
 
+-데이터 불러오기 위한 유틸 함수
+
+<br/>
+
 ```js
-데이터 불러오기 위한 유틸 함수
+
 
 src/api/apiList.js
 
@@ -54,6 +58,11 @@ export const fetchC = async () => {
 
 
 <br />
+
+- 사가 만들기
+
+<br />
+
 
 ```js
 
@@ -93,6 +102,10 @@ export function* buttonSaga() {                         // 하위 코드 중 한
   yield takeLatest(pushButton, pushSaga);               // 새로운 액션이 dispatch 될 시 실행 중이던 액션 중단하고 제일 최근의 액션만 실행
 }
 ```
+
+<br />
+
+- 사가 연결하고 실행하기
 
 <br />
 
