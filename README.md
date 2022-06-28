@@ -29,6 +29,8 @@ npm run server
 ```js
 데이터 불러오기 위한 유틸 함수
 
+src/api/apiList.js
+
 import axios from "axios";
 
 const axiosConfig = axios.create({ baseURL: "http://localhost:4000" });
@@ -54,6 +56,9 @@ export const fetchC = async () => {
 <br />
 
 ```js
+
+src/store/slice/buttonSlice.js
+
 import {
   call,
   put,
@@ -92,6 +97,8 @@ export function* buttonSaga() {                         // 하위 코드 중 한
 <br />
 
 ```js
+
+src/store/store/store.js
 
 import createSagaMiddleware from "@redux-saga/core";
 import { configureStore } from "@reduxjs/toolkit";
