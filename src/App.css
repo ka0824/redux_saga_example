@@ -1,0 +1,18 @@
+.App {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .two {
+  display: flex;
+  flex-direction: column;
+}
