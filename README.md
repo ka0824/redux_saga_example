@@ -73,6 +73,36 @@ import {
 
 <br />
 
+> ### 핵심 코드
+
+<br />
+
+- 제너레이터 함수
+
+  - 함수를 실행할 때마다, 순차적으로 결과를 반환
+  - 끝까지 실행되어야 끝남
+
+<br />
+
+```js
+
+function* test() {
+    yield "첫번째 실행";
+    yield "두번재 실행";
+    yield "세번째 실행";
+};
+
+let test2 = test();
+
+test2.next();     // {value: '첫번째 실행', done: false}
+test2.next();     // {value: '두번재 실행', done: false}
+test2.next();     // {value: '세번째 실행', done: false}
+test2.next();     // {value: undefined, done: true}
+
+```
+
+<br />
+
 > ### 코드 살펴보기
 
 <br/>
